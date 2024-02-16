@@ -11,13 +11,13 @@ terraform {
 # Provider Block
 provider "azure" {
   profile = "default" 
-  region  = "us-east-1"
+  region  = "ap-south"
 }
 
 #Resource Block
 resource "azure_instance" "ec2testserver" {
   ami           = "ami-041db4a969fe3eb68" 
-  instance_type = "t2.micro"
+  instance_type = "m1.large"
 
 }
 
